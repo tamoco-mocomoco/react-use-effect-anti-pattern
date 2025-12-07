@@ -43,11 +43,11 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/pattern1/*" element={<Pattern1 />} />
-        <Route path="/pattern2/*" element={<Pattern2 />} />
-        <Route path="/pattern3/*" element={<Pattern3 />} />
-        <Route path="/pattern4/*" element={<Pattern4 />} />
-        <Route path="/pattern5/*" element={<Pattern5 />} />
+        <Route path="/pattern1" element={<Pattern1 />} />
+        <Route path="/pattern2" element={<Pattern2 />} />
+        <Route path="/pattern3" element={<Pattern3 />} />
+        <Route path="/pattern4" element={<Pattern4 />} />
+        <Route path="/pattern5" element={<Pattern5 />} />
       </Routes>
     </div>
   )

@@ -1,4 +1,3 @@
-import { Routes, Route, NavLink } from 'react-router-dom'
 import Before from './Before'
 import After from './After'
 import CodeBlock from '../../components/CodeBlock'
@@ -72,28 +71,15 @@ export default function Pattern4() {
         </div>
       </div>
 
-      <nav style={{ marginBottom: '20px', marginTop: '20px' }}>
-        <NavLink to="before"><button>Before を試す</button></NavLink>
-        <NavLink to="after"><button>After を試す</button></NavLink>
-      </nav>
-
       <div className="pattern-container">
-        <Routes>
-          <Route path="before" element={<Before />} />
-          <Route path="after" element={<After />} />
-          <Route path="*" element={
-            <>
-              <div className="panel before">
-                <h3>Before <span className="badge bad">悪い例</span></h3>
-                <Before />
-              </div>
-              <div className="panel after">
-                <h3>After <span className="badge good">良い例</span></h3>
-                <After />
-              </div>
-            </>
-          } />
-        </Routes>
+        <div className="panel before">
+          <h3>Before <span className="badge bad">悪い例</span></h3>
+          <Before />
+        </div>
+        <div className="panel after">
+          <h3>After <span className="badge good">良い例</span></h3>
+          <After />
+        </div>
       </div>
     </div>
   )
