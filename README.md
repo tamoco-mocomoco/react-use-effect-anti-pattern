@@ -2,6 +2,10 @@
 
 React の `useEffect` を誤って使用するケースと、その改善方法を学ぶためのサンプル集です。
 
+## デモ
+
+https://tamoco-mocomoco.github.io/react-use-effect-anti-pattern/
+
 ## 5つのアンチパターン
 
 | パターン | 問題 | 解決策 |
